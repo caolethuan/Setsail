@@ -1,0 +1,340 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 20px;
+}
+
+.header__contact-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__contact-item {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.header__contact-item:hover .header__contact-text{
+    color: var(--primary-color);
+}
+
+.header__contact-icon {
+    vertical-align: middle;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.header__contact-text {
+    font-size: 1.3rem;
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__wrap-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__socials-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__socials-item:last-child .header__socials-link {
+    margin-right: 35px;
+}
+
+.header__socials-link {
+    font-size: 1.3rem;
+    margin-right: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__socials-icon:hover {
+    color: var(--primary-color);
+    transition: linear 0.2s;
+    background-color: transition var(--primary-color);
+}
+
+.header__langagues {
+    position: relative;
+}
+
+.header__langagues-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    list-style: none;
+    display: none;
+    z-index: 1;
+    -webkit-animation: increase ease-in 0.3s;
+    animation: increase ease-in 0.3s;
+}
+
+.header__langagues-selection {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+
+.header__langagues-selection span:hover::before{
+    width: 100%;
+}
+
+.header__langagues-selection span {
+    position: relative;
+}
+
+.header__langagues-selection span::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 0;
+    transition: width ease-out .3s;
+    background-color: #fff;
+}
+
+.header__langagues-selected {
+    display: block;
+    width: 140px;
+    text-align: center;
+    font-weight: 500;
+    background-color: #3abdc1;
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__langagues:hover .header__langagues-list {
+    display: block;
+}
+
+.header__langagues-icon {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.header__user-avt {
+    display: block;
+    width: 46px;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes increase {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: 100%;
+        opacity: 1;
+    }
+}
+
+/* Navbar */
+.navbar__logo {
+    height: 143px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.navbar__logo-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: block;
+    height: 120px;
+    padding-top: 40px;
+}
+
+.navbar__logo-img {
+    height: 100%;
+}
+
+/* Modal */
+
+.auth-form {
+    width: 308px;
+    display: none;
+}
+
+.auth-form-open {
+    display: block;
+}
+
+.auth-form__header {
+    display: flex;
+}
+
+.auth-form__heading {
+    display: block;
+    height: 52px;
+    line-height: 5.2rem;
+    width: 50%;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    background-color: #3ABDC1;
+    text-decoration: none;
+    user-select: none;
+}
+
+.auth-form__heading-active {
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
+.auth-form__switch-modal {
+    cursor: pointer;
+}
+
+.auth-form__form {
+    background-color: var(--primary-color);
+    padding: 30px 30px 20px;
+}
+
+.auth-form__title {
+    user-select: none;
+    font-size: 2rem;
+    color: #fff;
+    padding: 8px 0;
+}
+
+.auth-form__description {
+    user-select: none;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.auth-form__input {
+    padding: 13px 16px 13px;
+    color: #fff;
+    background-color: rgba(255, 255 ,255 , .25);
+    margin-bottom: 6px;
+    height: 52px;
+    min-width: 248px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.auth-form__input i {
+
+}
+
+.auth-form__username::placeholder,
+.auth-form__password::placeholder {
+    color: #fff;
+}
+
+.auth-form__username,
+.auth-form__password {
+    padding-left: 16px;
+    font-size: 1.4rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.auth-form__login-remember {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 20px 0 17px;
+}
+
+.auth-form__remember-check {
+}
+
+.auth-form__remember-text {
+    padding-left: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.auth-form__login-action {
+    display: block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    margin: 3px 0 20px;
+    color: #26878a;
+}
+
+.auth-form__login-action:hover {
+    color: var(--text-color);
+    transition: color ease-out .2s;
+}
+
+.auth-form__register-btn,
+.auth-form__login-btn {
+    width: 100%;
+}
+
+.auth-form__register-btn {
+    margin-top: 20px;
+}
+
+.auth-form__login-with-socials {
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 20px 0 0;
+    font-weight: 400;
+    user-select: none;
+}
+
+.auth-form__footer {
+    display: flex;
+}
+
+.auth-form__facebook-btn {
+    background-color: rgb(59, 89, 152);
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    transition: unset;
+}
+
+.auth-form__google-btn {
+    background-color: rgb(221, 75, 57);
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    transition: unset;
+}
+
+.auth-form__facebook-btn:hover {
+    background-color: #4363A5;
+}
+
+.auth-form__google-btn:hover {
+    background-color: #DD5543;
+}

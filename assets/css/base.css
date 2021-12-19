@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #3fd0d4;
+    --text-color: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* Button */
+.btn {
+    display: block;
+    min-width: 154px;
+    height: 52px;
+    border: none;
+    color: var(--text-color);
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transition: color, background-color ease-out .2s;
+    color: #fff;
+    background-color: #23A9AF;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    animation: modalFadeIn ease-in .2s;
+}
+
+.open {
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.modal__body {
+    margin: auto;
+    z-index: 1;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
