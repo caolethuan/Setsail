@@ -145,7 +145,7 @@
         opacity: 0;
     }
     to {
-        height: 100%;
+        height: default;
         opacity: 1;
     }
 }
@@ -171,6 +171,140 @@
 .navbar__logo-img {
     height: 100%;
 }
+
+.navbar__main {
+    width: 100%;
+    height: 82px;
+}
+
+.navbar__list {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar__item.navbar__item-active a{
+    color: var(--primary-color);
+}
+
+.navbar__link {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 12px 38px;
+    transition: color ease-out .2s;
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+}
+
+.navbar__link span {
+    position: relative;
+}
+
+.navbar__link:hover span::before {
+    width: 100%;
+}
+
+.navbar__link span::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-color);
+    transition: width ease-out .4s;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+}
+
+.slider__left {
+    background-position: right;
+}
+
+.slider__left,
+.slider__right {
+    width: 100%;
+    height: 668px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.slider__left-btn,
+.slider__right-btn {
+    background-color: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition-property: color, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.slider__left-btn {
+    top: 50%;
+    left: 10%;
+}
+
+.slider__left-text {
+    width: 423px;
+    height: 189px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%);
+}
+
+.slider__right-btn {
+    top: 50%;
+    right: 12%;
+}
+
+.slider__left-btn:hover,
+.slider__right-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    
+}
+
+.slider__left-btn:hover .silder__left-icon,
+.slider__right-btn:hover .silder__right-icon {
+    color: #fff;
+}
+
+.silder__left-icon,
+.silder__right-icon {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 500;
+    transition-property: color, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+
+
 
 /* Modal */
 

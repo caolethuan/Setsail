@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
 
     <div class="app">
-        <div class="header">
+        <div class="header hide-on-mobile-tablet">
             <div class="header__contact">
                 <ul class="header__contact-list">
                     <li class="header__contact-item">
@@ -81,18 +83,72 @@
                 </div>
             </div>
         </div>
-        <div class="navbar">
+        <div class="navbar hide-on-mobile-tablet">
             <div class="navbar__logo">
                 <a href="#" class="navbar__logo-link">
                     <img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-centered.png" alt="Ảnh logo" class="navbar__logo-img">
                 </a>
             </div>
+            <div class="navbar__main">
+                <ul class="navbar__list">
+                    <li class="navbar__item navbar__item-active">
+                        <a href="#" class="navbar__link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span>Pages</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span>Destinations</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span>Shop</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <span>Elements</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="slider">
-
-        </div>
-        <div class="container">
-
+        <div class="body">
+            <div class="grid wide">
+                <div class="row slider">
+                    <div class="slider__left col l-8">
+                        <div class="slider__left" style="background-image: url(./assets/img/travel-slide-1a.jpg);">
+                            <div class="slider__left-btn">
+                                <i class="silder__left-icon ti-angle-left"></i>
+                            </div>
+                            <div class="slider__left-text" style="background-image: url(./assets/img/travel-slide-text-1.png)"></div>
+                        </div>
+                    </div>
+                    <div class="slider__right col l-4">
+                        <div class="slider__right" style="background-image: url(./assets/img/travel-slide-1b.jpg);">
+                            <div class="slider__right-btn">
+                                <i class="silder__right-icon ti-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer">
 
