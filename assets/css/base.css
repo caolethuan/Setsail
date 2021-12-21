@@ -14,6 +14,11 @@ html {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+::selection {
+    background: var(--primary-color);
+    color: #fff;
+}
 /* Button */
 .btn {
     display: block;
@@ -43,6 +48,7 @@ html {
     left: 0;
     display: none;
     animation: modalFadeIn ease-in .2s;
+    z-index: 10;
 }
 
 .open {
@@ -58,7 +64,7 @@ html {
 
 .modal__body {
     margin: auto;
-    z-index: 1;
+    z-index: 11;
 }
 
 @keyframes modalFadeIn {
