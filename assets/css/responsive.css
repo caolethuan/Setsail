@@ -3,14 +3,100 @@
     .hide-on-mobile-tablet {
         display: none;
     }
+
+    .header-on-tablet-mobile {
+        display: block;
+    }
+    
+    .popular__img-wrap {
+        justify-content: center;
+    }
+
 }
 
 /* Mobile */
 @media (max-width: 739px) {
+    .slider {
+        margin-top: 50px;
+    }
 
+    .slider__left {
+        background-position: center;
+        height: 365px;
+        background-size: contain;
+    }
+
+    .slider__right {
+        background-position: center;
+        height: 574px;
+        background-size: contain;
+    }
+
+    .slider__left-text {
+        width: 192px;
+        height: 84px;
+    }
+
+    .popular__img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .mrgnbt-footer {
+        margin-bottom: 40px;
+    }
+
+    .intro__title {
+        font-size: 2.8rem;
+    }
+
+    .intro__description {
+        font-size: 1.6rem;
+    }
+
+    .tours__title {
+        font-size: 3.5rem;
+    }
+
+    .popular__title {
+        font-size: 2.8rem;
+    }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1024px){
 
+    .slider {
+        margin-top: 50px;
+    }
+
+    .slider__left {
+        height: 355px;
+    }
+
+    .slider__left-text {
+        width: 274px;
+        height: 120px;
+    }
+
+    .slider__right {
+        height: 355px;
+    }
+
+
+    .intro {
+        padding-top: 80px;
+    }
+
+    .intro__content {
+        margin-top: 50px;
+    }
+
+    .popular__item {
+        margin-bottom: 40px;
+    }
+
+    .popular__item-text {
+        padding: 0 15px;
+    }
 }
