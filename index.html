@@ -88,9 +88,9 @@
                 <div class="row">
                     <div class="col m-12 c-12">
                         <div class="header-on-tablet-mobile__wrap">
-                            <a href="#" class="header-on-tablet-mobile__menu-link">
+                            <label for="nav-input"" href="#" class="header-on-tablet-mobile__menu-link">
                                 <i class="header-on-tablet-mobile__menu-icon ti-menu"></i>
-                            </a>
+                            </label>
                             <a href="#" class="header-on-tablet-mobile__link">
                                 <img src="./assets/img/logo-mobile-img.png" alt="" class="header-on-tablet-mobile__logo">
                             </a>
@@ -103,7 +103,50 @@
                     </div>
                 </div>
             </div>
+            
+            <input type="checkbox" hidden name="" class="nav__input" id="nav-input">
+            <label for="nav-input" class="nav__overlay"></label>
+            
+            <nav class="header-on-tablet-mobile__nav">
+                <label for="nav-input" class="nav__close">
+                    <i class="nav__close-icon ti-close"></i>
+                </label>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#intro" class="nav__link">
+                            Intro
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#tours" class="nav__link">
+                            Tours
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#data" class="nav__link">
+                            Achievements
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#video" class="nav__link">
+                            Video for You
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">
+                            Popular
+                        </a>
+                    </li>
+                </ul>
+                
+            </nav>
         </div>
+
         <div class="navbar hide-on-mobile-tablet">
             <div class="navbar__logo">
                 <a href="#" class="navbar__logo-link">
@@ -152,7 +195,7 @@
         </div>
         <div class="body">
             <div class="grid wide">
-                <div class="row slider">
+                <div id="home" class="row slider">
                     <div class="slider__left col l-8 m-8 c-12 mrgnbt">
                         <div class="slider__left" style="background-image: url(./assets/img/travel-slide-1a.jpg);">
                             <div class="slider__left-btn hide-on-mobile-tablet">
@@ -169,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row intro">
+                <div id="intro" class="row intro">
                     <div class="intro__img col l-5 m-12 c-12" style="background-image: url(./assets/img/travel-img-intro.png);">
                     </div>
                     <div class="intro__content col l-7 m-12 c-12">
@@ -207,7 +250,7 @@
                         <img width="1200" height="510" class="intro__background" src="./assets/img/travel-img-background.jpg"></img>
                     </div>
                 </div>
-                <div class="row tours">
+                <div id="tours" class="row tours">
                     <div class="col l-12 m-12 c-12">
                         <h3 class="tours__title">The Best Tour</h3>
                         <p class="tours__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis</p>
@@ -311,7 +354,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row data">
+                <div id="data" class="row data">
                     <div class="col l-3 m-12 c-12">
                         <div class="data__wrap">
                             <h1 class="data__number">45</h1>
@@ -341,7 +384,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row video">
+                <div id="video" class="row video">
                     <div class="col l-12 m-12 c-12">
                         <a href="#" class="video__wrap">
                             <img src="./assets/img/travel-video-img.jpg" alt="" class="video__wrap-img">
@@ -351,7 +394,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="row popular">
+                <div id="popular" class="row popular">
                     <div class="col l-7 m-12 c-12">
                         <div class="popular__content">
                             <h2 class="popular__title">Our Popular Tours</h2>
