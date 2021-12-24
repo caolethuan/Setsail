@@ -1,3 +1,7 @@
+.app {
+    position: relative;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -77,8 +81,11 @@
     list-style: none;
     display: none;
     z-index: 1;
-    -webkit-animation: increase ease-in 0.3s;
-    animation: increase ease-in 0.3s;
+}
+
+.header__langagues-item {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 .header__langagues-selection {
@@ -137,17 +144,6 @@
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-}
-
-@keyframes increase {
-    from {
-        height: 0;
-        opacity: 0;
-    }
-    to {
-        height: default;
-        opacity: 1;
-    }
 }
 
 .header-on-tablet-mobile {
@@ -875,6 +871,44 @@
 .footer__bottom-link:hover {
     color: var(--primary-color);
 }
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 6rem;
+    text-align: center;
+    opacity: 0;
+    box-shadow: 4px 6px 15px 0 rgb(0 0 0 / 8%);
+    visibility: hidden;
+    transition: all linear .1s;
+}
+
+.back-to-top-icon {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 6rem;
+}
+
+.back-to-top.on {
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 /* Modal */
 
 .auth-form {

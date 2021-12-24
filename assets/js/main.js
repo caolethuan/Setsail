@@ -30,3 +30,15 @@ modal_overlay.addEventListener('click', hideModal)
 Array.from(modal_selected).forEach(modal => modal.addEventListener('click', switchModal))
 
 
+// Back to top button
+
+var topBtn = $('.back-to-top')
+
+document.onscroll = () => {
+    if (document.documentElement.scrollTop > 600 || window.scrollY >600)
+        topBtn.classList.add('on') 
+        // topBtn.style.visibility = 'visible'
+    else 
+        topBtn.classList.remove('on')
+        // topBtn.style.visibility = 'hidden'
+}
